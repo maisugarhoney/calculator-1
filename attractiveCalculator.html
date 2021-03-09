@@ -8,44 +8,50 @@
     <link rel="stylesheet" href="styleCalculator.css">
 </head>
 <body>
-    <form name="calculator" class="formDesign" action="attractiveCalculator.html" method="POST">
-        <!-- display button -->
-        <input type="text" name="answer" id="display">
-        <br><br>
-
-        <!-- button -->
-        <input type="button" class="btnDesign" value="C" onClick="calculator.answer.value=''">
-        <input type="button" class="btnDesign" value="&lt;" onClick="calculator.answer.value=calculator.answer.value.substring(0, calculator.answer.value.length-1)">
-        <input type="button" class="btnDesign" value="00" onClick="calculator.answer.value+='00'">
-        <input type="button" class="operatorDesign" value="/" onClick="calculator.answer.value+='/'">
-        <br><br>
-
-        <input type="button" class="btnDesign" value="7" onClick="calculator.answer.value+='7'">
-        <input type="button" class="btnDesign" value="8" onClick="calculator.answer.value+='8'">
-        <input type="button" class="btnDesign" value="9" onClick="calculator.answer.value+='9'">
-        <input type="button" class="operatorDesign" value="*" onClick="calculator.answer.value+='*'">
-        <br><br>
-
-        <input type="button" class="btnDesign" value="4" onClick="calculator.answer.value+='4'">
-        <input type="button" class="btnDesign" value="5" onClick="calculator.answer.value+='5'">
-        <input type="button" class="btnDesign" value="6" onClick="calculator.answer.value+='6'">
-        <input type="button" class="operatorDesign" value="-" onClick="calculator.answer.value+='-'">
-        <br><br>
-
-        <input type="button" class="btnDesign" value="1" onClick="calculator.answer.value+='1'">
-        <input type="button" class="btnDesign" value="2" onClick="calculator.answer.value+='2'">
-        <input type="button" class="btnDesign" value="3" onClick="calculator.answer.value+='3'">
-        <input type="button" class="operatorDesign" value="+" onClick="calculator.answer.value+='+'">
-        <br><br>
-
-        <input type="button" class="btnDesign" value="0" onClick="calculator.answer.value+='0'">
-        <input type="button" class="operatorDesign" value="." onClick="calculator.answer.value+='.'">
-        <input type="button" class="operatorDesign" value="=" onClick="calculator.answer.value=eval(calculator.answer.value)">
-        <br><br>
-
-
-
-
-    </form>
+    <head>
+        <h1>Online Calculator</h1>
+    </head>
+    
+    <main>
+        <form name="calculator" class="formDesign" action="attractiveCalculator.html" method="POST">
+            <!-- display button -->
+            <input type="text" name="answer" id="display">
+            <br><br>
+    
+            <!-- button -->
+            <input type="button" class="btnDesign" value="C" onClick="calculator.answer.value=''">
+            <input type="button" class="btnDesign" value="&lt;" onClick="calculator.answer.value=calculator.answer.value.substring(0, calculator.answer.value.length-1)">
+            <input type="button" class="btnDesign" value="00" onClick="calculator.answer.value+='00'">
+            <input type="button" class="operatorDesign" value="/" onClick="calculator.answer.value+='/'">
+            <br><br>
+    
+            <input type="button" class="btnDesign" value="7" onClick="calculator.answer.value+='7'">
+            <input type="button" class="btnDesign" value="8" onClick="calculator.answer.value+='8'">
+            <input type="button" class="btnDesign" value="9" onClick="calculator.answer.value+='9'">
+            <input type="button" class="operatorDesign" value="*" onClick="calculator.answer.value+='*'">
+            <br><br>
+    
+            <input type="button" class="btnDesign" value="4" onClick="calculator.answer.value+='4'">
+            <input type="button" class="btnDesign" value="5" onClick="calculator.answer.value+='5'">
+            <input type="button" class="btnDesign" value="6" onClick="calculator.answer.value+='6'">
+            <input type="button" class="operatorDesign" value="-" onClick="calculator.answer.value+='-'">
+            <br><br>
+    
+            <input type="button" class="btnDesign" value="1" onClick="calculator.answer.value+='1'">
+            <input type="button" class="btnDesign" value="2" onClick="calculator.answer.value+='2'">
+            <input type="button" class="btnDesign" value="3" onClick="calculator.answer.value+='3'">
+            <input type="button" class="operatorDesign" value="+" onClick="calculator.answer.value+='+'">
+            <br><br>
+    
+            <input type="button" class="btnDesign" id="zero" value="0" onClick="calculator.answer.value+='0'">
+            <input type="button" class="operatorDesign" value="." onClick="calculator.answer.value+='.'">
+            <input type="button" class="operatorDesign" value="=" onClick="calculator.answer.value=eval(calculator.answer.value)">
+            <br><br>
+    
+    
+    
+    
+        </form>
+    </main>
 </body>
 </html>
